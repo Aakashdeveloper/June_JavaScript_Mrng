@@ -31,4 +31,4 @@ true
 var a = confirm("Do you want to leave?")
 undefined
 a
-false
+falsee
