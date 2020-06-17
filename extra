@@ -53,3 +53,27 @@ factorial
 facbonici
 palindrom
 reverse()
+
+
+///////////
+First Time
+//////////
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/mygitlearn.git
+git push -u origin master
+
+
+///////////
+All Next Time
+//////////
+git add .
+git commit -m "first commit"
+git push
+
+
+git clone https://github.com/Aakashdeveloper/mygitlearn.git
+git pull
+
