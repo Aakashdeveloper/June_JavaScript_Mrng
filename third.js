@@ -13,6 +13,7 @@ undefined
 prompt("What is your age?")
 "33"
 
+parseInt()
 var a = prompt("Enter first Value")
 var b = prompt("Enter Second value")
 var out = parseFloat(a)+parseFloat(b)
