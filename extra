@@ -15,6 +15,9 @@ Ecma 7
 > Date
 > switch
 > localstorage
+> sessionStorage
+> cookies
+///////////////////////////
 > array
 > loops
 > String literals

@@ -30,6 +30,11 @@ true
 a !== c
 true
 
+var a = 10
+var b = 10
+a==b
+a===b
+
 
 (a==b)  ===> (a!=b)
 (a===b) ===> (a!==b)
