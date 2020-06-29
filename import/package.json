@@ -1,0 +1,16 @@
+{
+  "name": "mytranspile",
+  "version": "1.0.0",
+  "description": "this is for transpile",
+  "main": "first.js",
+  "keywords": [
+    "node"
+  ],
+  "author": "developerfunnel",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "@babel/register": "^7.10.3"
+  }
+}

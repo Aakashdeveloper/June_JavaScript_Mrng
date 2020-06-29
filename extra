@@ -25,16 +25,16 @@ Ecma 7
     > lat, const
     > maps,filter
 > Clousers
-///////////////////////////
 > regex
 > Hoisting
+> Transpile
+///////////////////////////
 > object 
 > this 
-> Transpile
 > Es6
     > classes
     > import export
-
+> call/apply
 > Prototypes
 > DoM
 > Geolocation
@@ -80,5 +80,15 @@ git push
 git clone https://github.com/Aakashdeveloper/mygitlearn.git
 git pull
 
+////
+Package.JSON
+/////
+Babel
 
+>>>>> 
+# Navigate to the folder where you want to generate using cmd
+# npm init
+# answer all question
+# type 'yes'
 
+> npm i @babel/core @babel/register @babel/preset-env
