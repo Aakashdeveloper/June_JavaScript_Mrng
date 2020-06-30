@@ -28,14 +28,14 @@ Ecma 7
 > regex
 > Hoisting
 > Transpile
-///////////////////////////
 > object 
 > this 
 > Es6
     > classes
     > import export
-> call/apply
 > Prototypes
+///////////////////////////
+> call/apply
 > DoM
 > Geolocation
 > Form validation
