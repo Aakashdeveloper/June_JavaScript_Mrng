@@ -34,17 +34,17 @@ Ecma 7
     > classes
     > import export
 > Prototypes
-///////////////////////////
 > call/apply
 > DoM
 > Geolocation
+> Calc
+///////////////////////////
 > Form validation
 > Event
-> Calc
-> Progress bar
 > currenyConvertor
 > promis
 > async await
+> Progress bar
 > Weather application
 > ajax
 > Baisc Jquery

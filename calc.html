@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Calc</title>
+        <script>
+            /*function add(){
+                var a = document.getElementById('first').value;
+                var b = document.getElementById('second').value;
+                var out = document.getElementsByClassName('output')[0];
+                out.innerText = parseFloat(a)+parseFloat(b)
+            }
+            function sub(){
+                var a = document.getElementById('first').value;
+                var b = document.getElementById('second').value;
+                var out = document.getElementsByClassName('output')[0];
+                out.innerText = parseFloat(a)-parseFloat(b)
+            }*/
+            function calc(opt){
+                var a = document.getElementById('first').value;
+                var b = document.getElementById('second').value;
+                var out = document.getElementsByClassName('output')[0];
+                if(opt == 'Add'){
+                    out.innerText = parseFloat(a)+parseFloat(b)
+                }else{
+                    out.innerText = parseFloat(a)-parseFloat(b)
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+            <center>
+                <div>
+                    <label>First</label>
+                    <input type="text" placeholder="first value"
+                    id="first"/>   
+                </div>
+                <div>
+                    <label>Second</label>
+                    <input type="text" placeholder="second value"
+                    id="second"/>   
+                </div>
+                <button type="button" onClick="calc('Add')">
+                    Add
+                </button>
+                <button type="button" onClick="calc('sub')">
+                    Sub
+                </button>
+               <h2 class="output"></h2>
+            </center>
+        </div>
+    </body>
+</html>
