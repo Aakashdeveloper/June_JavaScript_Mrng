@@ -1,12 +1,57 @@
 <html>
     <head>
+        <script>
+            const validate = () => {
+                var name = document.getElementById('fname').value;
+                if(name==''||name==' '){
+                    document.getElementById('out').innerText="Please enter first name"
+                }else{
+                    document.getElementById('out').innerText=""
+                }
+            }
 
+            function validatepass(){
+                var pass = document.getElementById('pass').value;
+                if(pass.length<8){
+                    document.getElementById('out').innerText="Min length of password is 8"
+                }else{
+                    document.getElementById('out').innerText=""
+                }
+            }
+
+            const validatecpass = () => {
+                var pass = document.getElementById('pass').value;
+                var cpass = document.getElementById('cpass').value;
+                if(pass !== cpass){
+                    document.getElementById('out').innerText="Password does not match"
+                }else{
+                    document.getElementById('out').innerText=""
+                }
+            }
+
+            const validateemail = () => {
+                var email = document.getElementById('email').value;
+                if(email==''||email==' '){
+                    document.getElementById('out').innerText="Please enter Email"
+                }else{
+                    if(email.match("^([a-zA-Z0-9]+)@([a-zA-Z0-9]+)\.([a-z]{2,5})$")==null){
+                        document.getElementById('out').innerText="Please enter valid email"
+                    }else{
+                        document.getElementById('out').innerText=""
+                    }
+                    
+                }
+            }
+
+        </script>
+        
     </head>
     <body>
         <form>
             <div>
                 <label>FirstName</label>
-                <input type="text" id="fname"/>
+                <input type="text" id="fname"
+                onblur="validate()"/>
             </div>
             <div>
                 <label>LastName</label>
@@ -14,15 +59,18 @@
             </div>
             <div>
                 <label>Password</label>
-                <input type="text" id="pass"/>
+                <input type="text" id="pass"
+                oninput="validatepass()"/>
             </div>
             <div>
                 <label>Confirm Password</label>
-                <input type="text" id="cpass"/>
+                <input type="text" id="cpass"
+                oninput="validatecpass()"/>
             </div>
             <div>
                 <label>Email</label>
-                <input type="text" id="email"/>
+                <input type="text" id="email"
+                onblur="validateemail()"/>
             </div>
         </form>
         <p id="out" style="color:red"></p>
